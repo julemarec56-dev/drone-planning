@@ -26,10 +26,3 @@ jobs:
           GITHUB_TOKEN_AGATT: ${{ secrets.AGATT_GITHUB_TOKEN }}
         run: python agatt_scraper.py
 
-      - name: Commit et push du JSON
-        run: |
-          git config user.name "AGATT Bot"
-          git config user.email "bot@agatt"
-          git add agatt_data.json || true
-          git diff --cached --quiet || git commit -m "planning manuel $(date +%Y-%m-%d\ %H:%M)"
-          git push
