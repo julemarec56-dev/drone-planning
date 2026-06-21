@@ -2,7 +2,11 @@
   "date": "2026-06-20",
   "extracted_at": "2026-06-20T06:00:00",
   "TPJ": 1,
+  "TPJ_noms": ["DARCEL Sébastien"],
   "TPN": 1,
+  "TPN_noms": ["AGNUS Vincent"],
   "OLJ": 0,
-  "OLN": 0
+  "OLJ_noms": [],
+  "OLN": 0,
+  "OLN_noms": []
 }
