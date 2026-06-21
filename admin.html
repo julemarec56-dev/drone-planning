@@ -143,16 +143,8 @@
     <h1>Cellule Appui Drone<span>Admin — SDIS 56</span></h1>
   </div>
 
-  <!-- Login -->
-  <div id="login-form">
-    <div class="section-title">Accès administrateur</div>
-    <input type="password" id="pwd" placeholder="Mot de passe" onkeydown="if(event.key==='Enter') login()">
-    <button class="btn-login" onclick="login()">Connexion</button>
-    <div id="login-err" class="status err" style="display:none">Mot de passe incorrect</div>
-  </div>
-
   <!-- Panel admin -->
-  <div id="admin-panel">
+  <div id="admin-panel" style="display:block">
     <div id="token-setup" style="display:none; margin-bottom:16px;">
       <div class="section-title">Configuration initiale</div>
       <input type="password" id="token-input" placeholder="Token GitHub (ghp_...)" style="width:100%;padding:12px 14px;background:#0f3460;border:1px solid #1a4a7a;border-radius:8px;color:#e0e0e0;font-size:0.9rem;margin-bottom:8px;">
@@ -167,24 +159,15 @@
 </div>
 
 <script>
-  const ADMIN_PASSWORD = "Drone56!";
   const GITHUB_REPO = "julemarec56-dev/drone-planning";
   const WORKFLOW_ID = "update_planning.yml";
   let GITHUB_TOKEN = localStorage.getItem("agatt_token") || "";
 
-  function login() {
-    const pwd = document.getElementById("pwd").value;
-    if (pwd === ADMIN_PASSWORD) {
-      document.getElementById("login-form").style.display = "none";
-      document.getElementById("admin-panel").style.display = "block";
-      if (!GITHUB_TOKEN) {
-        document.getElementById("token-setup").style.display = "block";
-      }
-      loadLastUpdate();
-    } else {
-      document.getElementById("login-err").style.display = "block";
-    }
-  }
+  // Afficher le token-setup si pas encore configuré, puis charger la dernière MAJ
+  window.onload = function() {
+    if (!GITHUB_TOKEN) document.getElementById("token-setup").style.display = "block";
+    loadLastUpdate();
+  };
 
   function saveToken() {
     const t = document.getElementById("token-input").value.trim();
