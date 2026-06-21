@@ -174,9 +174,8 @@
     { key: "OLN", label: "Officier de Liaison Nuit" }
   ];
 
-  // Chemin vers le fichier JSON généré par le script Python
-  // Le développeur adapte ce chemin selon l'architecture de l'appli
-  const DATA_URL = "./agatt_data.json";
+  const isDemain = new URLSearchParams(window.location.search).get("demain") === "1";
+  const DATA_URL = isDemain ? "./agatt_data_demain.json" : "./agatt_data.json";
 
   async function loadData() {
     const dateEl = document.getElementById("date-display");
