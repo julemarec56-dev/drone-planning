@@ -67,55 +67,64 @@
     }
 
     .indicator {
-      background: #0f3460;
       border-radius: 12px;
       padding: 16px;
       text-align: center;
-      border: 2px solid transparent;
-      transition: border-color 0.2s;
+      opacity: 0.35;
     }
 
-    .indicator.ok {
-      border-color: #00d4aa;
-    }
+    .indicator.ok { opacity: 1; }
 
-    .indicator.ko {
-      border-color: #e94560;
-    }
+    .indicator.TPJ { background: #1a2f5e; }
+    .indicator.TPN { background: #c0390b; }
+    .indicator.OLJ { background: #d4e84a; }
+    .indicator.OLN { background: #6a2fa0; }
 
     .indicator .label {
-      font-size: 0.7rem;
-      color: #7a8baa;
+      font-size: 0.65rem;
       text-transform: uppercase;
       letter-spacing: 0.5px;
       margin-bottom: 8px;
     }
 
+    .indicator.TPJ .label,
+    .indicator.TPN .label,
+    .indicator.OLN .label { color: rgba(255,255,255,0.7); }
+    .indicator.OLJ .label { color: rgba(0,0,0,0.6); }
+
     .indicator .code {
-      font-size: 1.3rem;
+      font-size: 1.4rem;
       font-weight: 700;
-      color: #e0e0e0;
       margin-bottom: 6px;
     }
 
-    .indicator .status {
-      font-size: 1.6rem;
-    }
+    .indicator.TPJ .code,
+    .indicator.TPN .code,
+    .indicator.OLN .code { color: #ffffff; }
+    .indicator.OLJ .code { color: #1a1a1a; }
+
+    .indicator .status { font-size: 1.4rem; }
 
     .indicator .value {
-      font-size: 0.75rem;
+      font-size: 0.72rem;
       margin-top: 4px;
     }
 
-    .indicator.ok .value { color: #00d4aa; }
-    .indicator.ko .value { color: #e94560; }
+    .indicator.TPJ .value,
+    .indicator.TPN .value,
+    .indicator.OLN .value { color: rgba(255,255,255,0.8); }
+    .indicator.OLJ .value { color: rgba(0,0,0,0.7); }
 
     .indicator .noms {
       font-size: 0.72rem;
       margin-top: 5px;
-      color: #00d4aa;
       line-height: 1.5;
     }
+
+    .indicator.TPJ .noms,
+    .indicator.TPN .noms,
+    .indicator.OLN .noms { color: rgba(255,255,255,0.9); }
+    .indicator.OLJ .noms { color: rgba(0,0,0,0.8); }
 
     .footer {
       margin-top: 20px;
@@ -190,7 +199,7 @@
           ? `<div class="noms">${noms.join("<br>")}</div>`
           : `<div class="value">${ok ? "Disponible" : "Non disponible"}</div>`;
         html += `
-          <div class="indicator ${ok ? "ok" : "ko"}">
+          <div class="indicator ${ind.key} ${ok ? "ok" : "ko"}">
             <div class="label">${ind.label}</div>
             <div class="code">${ind.key}</div>
             <div class="status">${ok ? "✅" : "❌"}</div>
