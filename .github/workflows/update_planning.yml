@@ -1,0 +1,35 @@
+name: Mise à jour planning drone
+
+on:
+  workflow_dispatch:  # déclenchement manuel via bouton
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Python setup
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Installer les dépendances
+        run: |
+          pip install playwright requests
+          playwright install chromium
+          playwright install-deps chromium
+
+      - name: Lancer le scraper
+        env:
+          GITHUB_TOKEN_AGATT: ${{ secrets.AGATT_GITHUB_TOKEN }}
+        run: python agatt_scraper.py
+
+      - name: Commit et push du JSON
+        run: |
+          git config user.name "AGATT Bot"
+          git config user.email "bot@agatt"
+          git add agatt_data.json || true
+          git diff --cached --quiet || git commit -m "planning manuel $(date +%Y-%m-%d\ %H:%M)"
+          git push
