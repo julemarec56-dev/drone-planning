@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planning Cellule Appui Drone</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #1a1a2e;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .card {
+      background: #16213e;
+      border-radius: 16px;
+      padding: 28px 32px;
+      width: 100%;
+      max-width: 480px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+      border: 1px solid #0f3460;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 8px;
+    }
+
+    .header img {
+      width: 40px;
+      height: 40px;
+    }
+
+    .header h1 {
+      font-size: 1.1rem;
+      color: #e0e0e0;
+      font-weight: 600;
+      line-height: 1.2;
+    }
+
+    .header h1 span {
+      display: block;
+      font-size: 0.75rem;
+      color: #7a8baa;
+      font-weight: 400;
+    }
+
+    .date {
+      font-size: 0.8rem;
+      color: #7a8baa;
+      margin-bottom: 22px;
+      padding-left: 2px;
+    }
+
+    .indicators {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .indicator {
+      background: #0f3460;
+      border-radius: 12px;
+      padding: 16px;
+      text-align: center;
+      border: 2px solid transparent;
+      transition: border-color 0.2s;
+    }
+
+    .indicator.ok {
+      border-color: #00d4aa;
+    }
+
+    .indicator.ko {
+      border-color: #e94560;
+    }
+
+    .indicator .label {
+      font-size: 0.7rem;
+      color: #7a8baa;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 8px;
+    }
+
+    .indicator .code {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #e0e0e0;
+      margin-bottom: 6px;
+    }
+
+    .indicator .status {
+      font-size: 1.6rem;
+    }
+
+    .indicator .value {
+      font-size: 0.75rem;
+      margin-top: 4px;
+    }
+
+    .indicator.ok .value { color: #00d4aa; }
+    .indicator.ko .value { color: #e94560; }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 0.7rem;
+      color: #4a5568;
+      text-align: center;
+    }
+
+    .loading {
+      text-align: center;
+      color: #7a8baa;
+      padding: 20px;
+    }
+
+    .error {
+      text-align: center;
+      color: #e94560;
+      padding: 20px;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+
+<div class="card">
+  <div class="header">
+    <div>
+      <h1>Cellule Appui Drone<span>SDIS 56 — CIS Vannes</span></h1>
+    </div>
+  </div>
+  <div class="date" id="date-display">Chargement...</div>
+
+  <div id="content">
+    <div class="loading">Chargement des données...</div>
+  </div>
+
+  <div class="footer">Données extraites depuis AGATT · Mise à jour quotidienne à 6h00</div>
+</div>
+
+<script>
+  const INDICATORS = [
+    { key: "TPJ", label: "Télépilotes Jour" },
+    { key: "TPN", label: "Télépilotes Nuit" },
+    { key: "OLJ", label: "Officiers Liaison Jour" },
+    { key: "OLN", label: "Officiers Liaison Nuit" }
+  ];
+
+  // Chemin vers le fichier JSON généré par le script Python
+  // Le développeur adapte ce chemin selon l'architecture de l'appli
+  const DATA_URL = "./agatt_data.json";
+
+  async function loadData() {
+    const dateEl = document.getElementById("date-display");
+    const contentEl = document.getElementById("content");
+
+    try {
+      const res = await fetch(DATA_URL + "?t=" + Date.now());
+      if (!res.ok) throw new Error("Fichier introuvable");
+      const data = await res.json();
+
+      const date = new Date(data.date);
+      dateEl.textContent = "Planning du " + date.toLocaleDateString("fr-FR", {
+        weekday: "long", day: "numeric", month: "long", year: "numeric"
+      });
+
+      let html = '<div class="indicators">';
+      for (const ind of INDICATORS) {
+        const val = data[ind.key];
+        const ok = val === 1;
+        html += `
+          <div class="indicator ${ok ? "ok" : "ko"}">
+            <div class="label">${ind.label}</div>
+            <div class="code">${ind.key}</div>
+            <div class="status">${ok ? "✅" : "❌"}</div>
+            <div class="value">${ok ? "Disponible" : "Non disponible"}</div>
+          </div>`;
+      }
+      html += '</div>';
+      contentEl.innerHTML = html;
+
+    } catch (e) {
+      dateEl.textContent = "";
+      contentEl.innerHTML = `<div class="error">⚠️ Impossible de charger les données.<br>Vérifiez que agatt_data.json est présent.</div>`;
+    }
+  }
+
+  loadData();
+</script>
+
+</body>
+</html>
