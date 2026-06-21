@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin — Cellule Appui Drone</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #1a1a2e;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .card {
+      background: #16213e;
+      border-radius: 16px;
+      padding: 28px 32px;
+      width: 100%;
+      max-width: 420px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+      border: 1px solid #0f3460;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 20px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #0f3460;
+    }
+
+    .header img {
+      height: 70px;
+      width: auto;
+      flex-shrink: 0;
+    }
+
+    .header h1 {
+      font-size: 1.1rem;
+      color: #e0e0e0;
+      font-weight: 700;
+      line-height: 1.3;
+    }
+
+    .header h1 span {
+      display: block;
+      font-size: 0.75rem;
+      color: #7a8baa;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-top: 3px;
+    }
+
+    #login-form input {
+      width: 100%;
+      padding: 12px 14px;
+      background: #0f3460;
+      border: 1px solid #1a4a7a;
+      border-radius: 8px;
+      color: #e0e0e0;
+      font-size: 1rem;
+      margin-bottom: 12px;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+
+    button:hover { opacity: 0.85; }
+
+    .btn-login {
+      background: #335cc5;
+      color: white;
+    }
+
+    .btn-update {
+      background: #e67e22;
+      color: white;
+      font-size: 1.1rem;
+      padding: 18px;
+      margin-top: 8px;
+    }
+
+    .btn-agents {
+      background: #1a4a7a;
+      color: #a0c4ff;
+      margin-top: 10px;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    .status {
+      margin-top: 16px;
+      padding: 12px 16px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      text-align: center;
+      display: none;
+    }
+
+    .status.ok { background: #1a4a2e; color: #4caf50; display: block; }
+    .status.err { background: #4a1a1a; color: #ef5350; display: block; }
+    .status.loading { background: #1a3a4a; color: #64b5f6; display: block; }
+
+    .section-title {
+      font-size: 0.75rem;
+      color: #7a8baa;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 14px;
+    }
+
+    #admin-panel { display: none; }
+
+    .last-update {
+      font-size: 0.75rem;
+      color: #4a5568;
+      text-align: center;
+      margin-top: 14px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="card">
+  <div class="header">
+    <img src="./logo.svg" alt="Logo">
+    <h1>Cellule Appui Drone<span>Admin — SDIS 56</span></h1>
+  </div>
+
+  <!-- Login -->
+  <div id="login-form">
+    <div class="section-title">Accès administrateur</div>
+    <input type="password" id="pwd" placeholder="Mot de passe" onkeydown="if(event.key==='Enter') login()">
+    <button class="btn-login" onclick="login()">Connexion</button>
+    <div id="login-err" class="status err" style="display:none">Mot de passe incorrect</div>
+  </div>
+
+  <!-- Panel admin -->
+  <div id="admin-panel">
+    <div id="token-setup" style="display:none; margin-bottom:16px;">
+      <div class="section-title">Configuration initiale</div>
+      <input type="password" id="token-input" placeholder="Token GitHub (ghp_...)" style="width:100%;padding:12px 14px;background:#0f3460;border:1px solid #1a4a7a;border-radius:8px;color:#e0e0e0;font-size:0.9rem;margin-bottom:8px;">
+      <button class="btn-login" onclick="saveToken()">Enregistrer le token</button>
+    </div>
+    <div class="section-title">Mise à jour manuelle</div>
+    <button class="btn-update" onclick="updateNow()">🔄 Mettre à jour maintenant</button>
+    <div id="status" class="status"></div>
+    <div class="last-update" id="last-update"></div>
+    <button class="btn-agents" onclick="window.open('./index.html','_blank')">👁 Voir la page agents</button>
+  </div>
+</div>
+
+<script>
+  const ADMIN_PASSWORD = "Drone56!";
+  const GITHUB_REPO = "julemarec56-dev/drone-planning";
+  const WORKFLOW_ID = "update_planning.yml";
+  let GITHUB_TOKEN = localStorage.getItem("agatt_token") || "";
+
+  function login() {
+    const pwd = document.getElementById("pwd").value;
+    if (pwd === ADMIN_PASSWORD) {
+      document.getElementById("login-form").style.display = "none";
+      document.getElementById("admin-panel").style.display = "block";
+      if (!GITHUB_TOKEN) {
+        document.getElementById("token-setup").style.display = "block";
+      }
+      loadLastUpdate();
+    } else {
+      document.getElementById("login-err").style.display = "block";
+    }
+  }
+
+  function saveToken() {
+    const t = document.getElementById("token-input").value.trim();
+    if (t.startsWith("ghp_")) {
+      GITHUB_TOKEN = t;
+      localStorage.setItem("agatt_token", t);
+      document.getElementById("token-setup").style.display = "none";
+    }
+  }
+
+  async function loadLastUpdate() {
+    try {
+      const res = await fetch("./agatt_data.json?t=" + Date.now());
+      const data = await res.json();
+      const el = document.getElementById("last-update");
+      if (data.extracted_at) {
+        const d = new Date(data.extracted_at);
+        el.textContent = "Dernière mise à jour : " + d.toLocaleString("fr-FR");
+      }
+    } catch(e) {}
+  }
+
+  async function updateNow() {
+    const statusEl = document.getElementById("status");
+    statusEl.className = "status loading";
+    statusEl.textContent = "⏳ Lancement de la mise à jour...";
+
+    try {
+      const resp = await fetch(
+        `https://api.github.com/repos/${GITHUB_REPO}/actions/workflows/${WORKFLOW_ID}/dispatches`,
+        {
+          method: "POST",
+          headers: {
+            "Authorization": `token ${GITHUB_TOKEN}`,
+            "Content-Type": "application/json",
+            "Accept": "application/vnd.github.v3+json"
+          },
+          body: JSON.stringify({ ref: "main" })
+        }
+      );
+
+      if (resp.status === 204) {
+        statusEl.className = "status ok";
+        statusEl.textContent = "✅ Mise à jour lancée ! Disponible dans 2-3 minutes.";
+      } else {
+        const err = await resp.text();
+        statusEl.className = "status err";
+        statusEl.textContent = "❌ Erreur : " + resp.status;
+      }
+    } catch(e) {
+      statusEl.className = "status err";
+      statusEl.textContent = "❌ Erreur réseau : " + e.message;
+    }
+  }
+</script>
+
+</body>
+</html>
