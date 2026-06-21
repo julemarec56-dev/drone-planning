@@ -1,12 +1,12 @@
 {
-  "date": "2026-06-20",
-  "extracted_at": "2026-06-20T06:00:00",
+  "date": "2026-06-21",
+  "extracted_at": "2026-06-21T06:00:00",
   "TPJ": 1,
-  "TPJ_noms": ["DARCEL Sébastien"],
+  "TPJ_noms": ["SELO Tonin"],
   "TPN": 1,
-  "TPN_noms": ["AGNUS Vincent"],
-  "OLJ": 0,
-  "OLJ_noms": [],
-  "OLN": 0,
-  "OLN_noms": []
+  "TPN_noms": ["LE PALLEC Alexandre"],
+  "OLJ": 1,
+  "OLJ_noms": ["GOUADEC Patrick"],
+  "OLN": 1,
+  "OLN_noms": ["GOUADEC Patrick"]
 }
