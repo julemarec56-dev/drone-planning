@@ -110,6 +110,13 @@
     .indicator.ok .value { color: #00d4aa; }
     .indicator.ko .value { color: #e94560; }
 
+    .indicator .noms {
+      font-size: 0.72rem;
+      margin-top: 5px;
+      color: #00d4aa;
+      line-height: 1.5;
+    }
+
     .footer {
       margin-top: 20px;
       font-size: 0.7rem;
@@ -178,12 +185,16 @@
       for (const ind of INDICATORS) {
         const val = data[ind.key];
         const ok = val === 1;
+        const noms = data[ind.key + "_noms"] || [];
+        const nomsHtml = ok && noms.length > 0
+          ? `<div class="noms">${noms.join("<br>")}</div>`
+          : `<div class="value">${ok ? "Disponible" : "Non disponible"}</div>`;
         html += `
           <div class="indicator ${ok ? "ok" : "ko"}">
             <div class="label">${ind.label}</div>
             <div class="code">${ind.key}</div>
             <div class="status">${ok ? "✅" : "❌"}</div>
-            <div class="value">${ok ? "Disponible" : "Non disponible"}</div>
+            ${nomsHtml}
           </div>`;
       }
       html += '</div>';
