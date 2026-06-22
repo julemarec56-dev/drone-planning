@@ -70,6 +70,28 @@ def get_planning():
             page.wait_for_load_state("networkidle")
             page.wait_for_timeout(1000)
 
+        # Cocher toutes les équipes (dont Accueil Cellule appui drone = for1245)
+        cochees = page.evaluate("""
+            () => {
+                let count = 0;
+                document.querySelectorAll('input[type=checkbox]').forEach(cb => {
+                    if (!cb.checked && (cb.id.startsWith('for') || cb.name.startsWith('checkbox'))) {
+                        cb.checked = true;
+                        cb.dispatchEvent(new Event('change'));
+                        count++;
+                    }
+                });
+                // Cliquer sur AFFICHER
+                const btns = Array.from(document.querySelectorAll('input[type=button], input[type=submit], button'));
+                const btn = btns.find(b => (b.value || b.innerText || '').toUpperCase().includes('AFFICHER'));
+                if (btn) { btn.click(); return count; }
+                return count;
+            }
+        """)
+        page.wait_for_load_state("networkidle")
+        page.wait_for_timeout(1000)
+        print(f"[{datetime.now().strftime('%H:%M:%S')}] {cochees} équipe(s) supplémentaire(s) cochée(s).")
+
         # Extraire les codes colorés + noms d'agents (JS validé en session)
         agents_codes = page.evaluate("""
             () => {
