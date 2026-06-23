@@ -275,7 +275,24 @@ def push_to_github(json_content):
         print(f"[ERREUR GitHub] {resp.status_code} - {resp.text[:200]}")
 
 
+def attendre_reseau(timeout=60):
+    """Attend que le réseau soit disponible avant de commencer."""
+    import time, socket
+    print(f"[{datetime.now().strftime('%H:%M:%S')}] Vérification réseau...")
+    for _ in range(timeout):
+        try:
+            socket.setdefaulttimeout(3)
+            socket.socket(socket.AF_INET, socket.SOCK_STREAM).connect(("8.8.8.8", 53))
+            print(f"[{datetime.now().strftime('%H:%M:%S')}] Réseau disponible.")
+            return True
+        except Exception:
+            time.sleep(1)
+    print("[ERREUR] Réseau non disponible après 60s.")
+    return False
+
+
 def main():
+    attendre_reseau()
     try:
         data = get_planning()
         json_content = json.dumps(data, ensure_ascii=False, indent=2)
