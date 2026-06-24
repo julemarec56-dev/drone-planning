@@ -1,7 +1,10 @@
 name: Mise à jour planning drone
 
 on:
-  workflow_dispatch:  # déclenchement manuel via bouton
+  workflow_dispatch:  # déclenchement manuel via bouton admin
+  schedule:
+    - cron: '0 5 * * *'   # 6h00 heure française (UTC+1) = 5h UTC
+    - cron: '0 13 * * *'  # 15h00 heure française (UTC+2 en été) = 13h UTC
 
 jobs:
   update:
@@ -23,6 +26,7 @@ jobs:
 
       - name: Lancer le scraper
         env:
-          GITHUB_TOKEN_AGATT: ${{ secrets.AGATT_GITHUB_TOKEN }}
+          AGATT_USER: ${{ secrets.AGATT_USER }}
+          AGATT_PASSWORD: ${{ secrets.AGATT_PASSWORD }}
+          AGATT_GITHUB_TOKEN: ${{ secrets.AGATT_GITHUB_TOKEN }}
         run: python agatt_scraper.py
-
