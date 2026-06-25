@@ -1,19 +1,17 @@
 {
-  "date": "2026-06-22",
+  "date": "2026-06-26",
   "TPJ": 1,
   "TPJ_noms": [
-    "SELO Tony"
+    "AGNUS Vin"
   ],
-  "TPN": 1,
-  "TPN_noms": [
-    "SELO Tony"
-  ],
+  "TPN": 0,
+  "TPN_noms": [],
   "OLJ": 1,
   "OLJ_noms": [
-    "GOUADEC Pat"
+    "LE MIGNANT Pie"
   ],
   "OLN": 1,
   "OLN_noms": [
-    "GOUADEC Pat"
+    "PELARD Arn"
   ]
 }
