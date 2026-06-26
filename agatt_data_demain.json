@@ -1,17 +1,19 @@
 {
-  "date": "2026-06-26",
+  "date": "2026-06-27",
   "TPJ": 1,
   "TPJ_noms": [
-    "AGNUS Vin"
+    "DUCHENE Ala"
   ],
-  "TPN": 0,
-  "TPN_noms": [],
+  "TPN": 1,
+  "TPN_noms": [
+    "DUCHENE Ala"
+  ],
   "OLJ": 1,
   "OLJ_noms": [
-    "LE MIGNANT Pie"
+    "GOUADEC Pat"
   ],
   "OLN": 1,
   "OLN_noms": [
-    "PELARD Arn"
+    "GOUADEC Pat"
   ]
 }
