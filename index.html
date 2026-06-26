@@ -189,7 +189,7 @@
   </div>
 
   <div class="footer">Données extraites depuis AGATT · Mise à jour quotidienne à 6h00</div>
-  <div style="text-align:center; margin-top:12px;">
+  <div id="zone-maj" style="display:none;text-align:center;margin-top:12px;">
     <button id="btn-update" onclick="demanderMiseAJour()" style="background:none;border:1px solid #ccc;border-radius:6px;padding:6px 14px;font-size:0.75rem;color:#666;cursor:pointer;">⟳ Mettre à jour</button>
     <div id="update-msg" style="font-size:0.7rem;color:#888;margin-top:4px;"></div>
   </div>
@@ -246,6 +246,10 @@
   }
 
   loadData();
+
+  if (new URLSearchParams(window.location.search).get("maj") === "julie56") {
+    document.getElementById("zone-maj").style.display = "block";
+  }
 
   function demanderMiseAJour() {
     const btn = document.getElementById('btn-update');
