@@ -189,6 +189,10 @@
   </div>
 
   <div class="footer">Données extraites depuis AGATT · Mise à jour quotidienne à 6h00</div>
+  <div style="text-align:center; margin-top:12px;">
+    <button id="btn-update" onclick="demanderMiseAJour()" style="background:none;border:1px solid #ccc;border-radius:6px;padding:6px 14px;font-size:0.75rem;color:#666;cursor:pointer;">⟳ Mettre à jour</button>
+    <div id="update-msg" style="font-size:0.7rem;color:#888;margin-top:4px;"></div>
+  </div>
 </div>
 
 <script>
@@ -242,6 +246,23 @@
   }
 
   loadData();
+
+  function demanderMiseAJour() {
+    const btn = document.getElementById('btn-update');
+    const msg = document.getElementById('update-msg');
+    btn.disabled = true;
+    msg.textContent = 'Demande envoyée, mise à jour dans ~30 secondes...';
+    fetch('https://ntfy.sh/drone-sdis56-update-julie56', {
+      method: 'POST',
+      body: 'update',
+      headers: { 'Title': 'Mise à jour planning drone' }
+    }).then(() => {
+      setTimeout(() => { loadData(); btn.disabled = false; msg.textContent = ''; }, 35000);
+    }).catch(() => {
+      msg.textContent = 'Erreur — PC allumé ?';
+      btn.disabled = false;
+    });
+  }
 </script>
 
 </body>
