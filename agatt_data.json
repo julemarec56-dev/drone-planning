@@ -1,12 +1,14 @@
 {
   "date": "2026-06-26",
-  "extracted_at": "2026-06-26T06:00:01.571081",
+  "extracted_at": "2026-06-26T07:34:07.520625",
   "TPJ": 1,
   "TPJ_noms": [
     "AGNUS Vin"
   ],
-  "TPN": 0,
-  "TPN_noms": [],
+  "TPN": 1,
+  "TPN_noms": [
+    "AGNUS Vin"
+  ],
   "OLJ": 1,
   "OLJ_noms": [
     "LE MIGNANT Pie"
