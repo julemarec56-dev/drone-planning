@@ -1,17 +1,20 @@
 {
-  "date": "2026-06-28",
-  "TPJ": 0,
-  "TPJ_noms": [],
+  "date": "2026-06-29",
+  "extracted_at": "2026-06-28T06:02:06.241359",
+  "TPJ": 1,
+  "TPJ_noms": [
+    "AGNUS Vin"
+  ],
   "TPN": 1,
   "TPN_noms": [
     "SELO Ton"
   ],
   "OLJ": 1,
   "OLJ_noms": [
-    "GOUADEC Pat"
+    "LE MIGNANT Pie"
   ],
   "OLN": 1,
   "OLN_noms": [
-    "GOUADEC Pat"
+    "GRANDIN Yan"
   ]
 }
