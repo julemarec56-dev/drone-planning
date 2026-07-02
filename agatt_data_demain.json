@@ -1,10 +1,11 @@
 {
-  "date": "2026-07-02",
+  "date": "2026-07-03",
+  "extracted_at": "2026-07-02T06:01:28.505892",
   "TPJ": 0,
   "TPJ_noms": [],
   "TPN": 1,
   "TPN_noms": [
-    "AGNUS Vin"
+    "SELO Ton"
   ],
   "OLJ": 1,
   "OLJ_noms": [
@@ -12,6 +13,6 @@
   ],
   "OLN": 1,
   "OLN_noms": [
-    "GOUADEC Pat"
+    "LE MIGNANT Pie"
   ]
 }
