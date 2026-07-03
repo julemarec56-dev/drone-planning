@@ -1,17 +1,20 @@
 {
-  "date": "2026-07-03",
-  "TPJ": 0,
-  "TPJ_noms": [],
+  "date": "2026-07-04",
+  "extracted_at": "2026-07-03T06:01:45.996091",
+  "TPJ": 1,
+  "TPJ_noms": [
+    "FAVE Ber"
+  ],
   "TPN": 1,
   "TPN_noms": [
-    "SELO Ton"
+    "FAVE Ber"
   ],
   "OLJ": 1,
   "OLJ_noms": [
-    "LE MIGNANT Pie"
+    "GOUADEC Pat"
   ],
   "OLN": 1,
   "OLN_noms": [
-    "LE MIGNANT Pie"
+    "GOUADEC Pat"
   ]
 }
