@@ -1,11 +1,14 @@
 {
-  "date": "2026-07-04",
+  "date": "2026-07-05",
+  "extracted_at": "2026-07-04T06:01:59.628322",
   "TPJ": 1,
   "TPJ_noms": [
-    "FAVE Ber"
+    "DARCEL Séb"
   ],
-  "TPN": 0,
-  "TPN_noms": [],
+  "TPN": 1,
+  "TPN_noms": [
+    "DARCEL Séb"
+  ],
   "OLJ": 1,
   "OLJ_noms": [
     "GOUADEC Pat"
