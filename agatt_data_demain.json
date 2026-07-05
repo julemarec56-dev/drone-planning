@@ -1,17 +1,17 @@
 {
-  "date": "2026-07-05",
-  "TPJ": 1,
-  "TPJ_noms": [
-    "DARCEL Séb"
+  "date": "2026-07-06",
+  "TPJ": 0,
+  "TPJ_noms": [],
+  "TPN": 1,
+  "TPN_noms": [
+    "SELO Ton"
   ],
-  "TPN": 0,
-  "TPN_noms": [],
   "OLJ": 1,
   "OLJ_noms": [
-    "GOUADEC Pat"
+    "GICQUEL Ben"
   ],
   "OLN": 1,
   "OLN_noms": [
-    "GOUADEC Pat"
+    "GICQUEL Ben"
   ]
 }
