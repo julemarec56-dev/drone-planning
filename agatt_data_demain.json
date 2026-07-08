@@ -1,16 +1,13 @@
 {
-  "date": "2026-07-08",
-  "TPJ": 1,
-  "TPJ_noms": [
-    "DARCEL Séb"
-  ],
-  "TPN": 1,
-  "TPN_noms": [
-    "HESLOUIS Séb"
-  ],
+  "date": "2026-07-09",
+  "extracted_at": "2026-07-08T06:02:32.166761",
+  "TPJ": 0,
+  "TPJ_noms": [],
+  "TPN": 0,
+  "TPN_noms": [],
   "OLJ": 1,
   "OLJ_noms": [
-    "GUERIN Séb"
+    "GICQUEL Ben"
   ],
   "OLN": 1,
   "OLN_noms": [
