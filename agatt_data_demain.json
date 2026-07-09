@@ -1,5 +1,6 @@
 {
-  "date": "2026-07-09",
+  "date": "2026-07-10",
+  "extracted_at": "2026-07-09T06:01:31.624026",
   "TPJ": 0,
   "TPJ_noms": [],
   "TPN": 0,
@@ -8,8 +9,6 @@
   "OLJ_noms": [
     "GICQUEL Ben"
   ],
-  "OLN": 1,
-  "OLN_noms": [
-    "GRANDIN Yan"
-  ]
+  "OLN": 0,
+  "OLN_noms": []
 }
