@@ -1,14 +1,12 @@
 {
-  "date": "2026-07-10",
-  "extracted_at": "2026-07-10T06:00:04.559493",
+  "date": "2026-07-11",
+  "extracted_at": "2026-07-11T06:00:03.113611",
   "TPJ": 0,
   "TPJ_noms": [],
   "TPN": 0,
   "TPN_noms": [],
-  "OLJ": 1,
-  "OLJ_noms": [
-    "GICQUEL Ben"
-  ],
+  "OLJ": 0,
+  "OLJ_noms": [],
   "OLN": 0,
   "OLN_noms": []
 }
