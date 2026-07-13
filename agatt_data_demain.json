@@ -1,15 +1,17 @@
 {
-  "date": "2026-07-13",
-  "extracted_at": "2026-07-12T06:00:52.683604",
-  "TPJ": 0,
-  "TPJ_noms": [],
+  "date": "2026-07-14",
+  "extracted_at": "2026-07-13T06:01:38.409648",
+  "TPJ": 1,
+  "TPJ_noms": [
+    "DUCHENE Ala"
+  ],
   "TPN": 1,
   "TPN_noms": [
     "SELO Ton"
   ],
   "OLJ": 1,
   "OLJ_noms": [
-    "GICQUEL Ben"
+    "CARBONELL Jea"
   ],
   "OLN": 0,
   "OLN_noms": []
