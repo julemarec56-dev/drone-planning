@@ -1,12 +1,16 @@
 {
-  "date": "2026-07-12",
-  "extracted_at": "2026-07-12T06:00:08.105457",
+  "date": "2026-07-13",
+  "extracted_at": "2026-07-13T06:00:09.380379",
   "TPJ": 0,
   "TPJ_noms": [],
-  "TPN": 0,
-  "TPN_noms": [],
-  "OLJ": 0,
-  "OLJ_noms": [],
+  "TPN": 1,
+  "TPN_noms": [
+    "SELO Ton"
+  ],
+  "OLJ": 1,
+  "OLJ_noms": [
+    "GICQUEL Ben"
+  ],
   "OLN": 0,
   "OLN_noms": []
 }
