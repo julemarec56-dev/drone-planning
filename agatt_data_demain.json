@@ -1,9 +1,8 @@
 {
-  "date": "2026-07-14",
-  "extracted_at": "2026-07-13T06:01:38.409648",
+  "date": "2026-07-23",
   "TPJ": 1,
   "TPJ_noms": [
-    "DUCHENE Ala"
+    "AGNUS Vin"
   ],
   "TPN": 1,
   "TPN_noms": [
@@ -11,8 +10,10 @@
   ],
   "OLJ": 1,
   "OLJ_noms": [
-    "CARBONELL Jea"
+    "GUERIN Séb"
   ],
-  "OLN": 0,
-  "OLN_noms": []
+  "OLN": 1,
+  "OLN_noms": [
+    "GOUADEC Pat"
+  ]
 }
