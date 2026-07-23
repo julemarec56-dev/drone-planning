@@ -1,6 +1,6 @@
 {
-  "date": "2026-07-22",
-  "extracted_at": "2026-07-22T16:12:57.921019",
+  "date": "2026-07-23",
+  "extracted_at": "2026-07-23T09:23:02.835089",
   "TPJ": 1,
   "TPJ_noms": [
     "AGNUS Vin"
@@ -9,8 +9,10 @@
   "TPN_noms": [
     "SELO Ton"
   ],
-  "OLJ": 0,
-  "OLJ_noms": [],
+  "OLJ": 1,
+  "OLJ_noms": [
+    "GUERIN Séb"
+  ],
   "OLN": 1,
   "OLN_noms": [
     "GOUADEC Pat"
