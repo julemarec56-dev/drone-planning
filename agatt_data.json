@@ -1,17 +1,15 @@
 {
-  "date": "2026-07-24",
-  "extracted_at": "2026-07-24T06:00:02.638121",
+  "date": "2026-07-25",
+  "extracted_at": "2026-07-25T06:00:17.390440",
   "TPJ": 1,
   "TPJ_noms": [
-    "AGNUS Vin"
+    "LE MAREC Jul"
   ],
-  "TPN": 1,
-  "TPN_noms": [
-    "HESLOUIS Séb"
-  ],
+  "TPN": 0,
+  "TPN_noms": [],
   "OLJ": 1,
   "OLJ_noms": [
-    "GICQUEL Ben"
+    "GOUADEC Pat"
   ],
   "OLN": 1,
   "OLN_noms": [
