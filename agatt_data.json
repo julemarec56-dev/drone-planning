@@ -1,20 +1,16 @@
 {
-  "date": "2026-07-29",
-  "extracted_at": "2026-07-29T06:00:02.952357",
-  "TPJ": 1,
-  "TPJ_noms": [
-    "LE MAREC Jul"
-  ],
-  "TPN": 1,
-  "TPN_noms": [
-    "HESLOUIS Séb"
-  ],
+  "date": "2026-07-30",
+  "extracted_at": "2026-07-30T07:14:29.726902",
+  "TPJ": 0,
+  "TPJ_noms": [],
+  "TPN": 0,
+  "TPN_noms": [],
   "OLJ": 1,
   "OLJ_noms": [
-    "GICQUEL Ben"
+    "LE MAREC Jul"
   ],
   "OLN": 1,
   "OLN_noms": [
-    "GOUADEC Pat"
+    "GRANDIN Yan"
   ]
 }
