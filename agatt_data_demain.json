@@ -1,14 +1,11 @@
 {
   "date": "2026-07-31",
-  "extracted_at": "2026-07-30T07:15:58.055067",
   "TPJ": 1,
   "TPJ_noms": [
     "AGNUS Vin"
   ],
-  "TPN": 1,
-  "TPN_noms": [
-    "AGNUS Vin"
-  ],
+  "TPN": 0,
+  "TPN_noms": [],
   "OLJ": 1,
   "OLJ_noms": [
     "GICQUEL Ben"
