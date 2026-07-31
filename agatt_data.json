@@ -1,16 +1,18 @@
 {
-  "date": "2026-07-30",
-  "extracted_at": "2026-07-30T07:14:29.726902",
-  "TPJ": 0,
-  "TPJ_noms": [],
-  "TPN": 0,
-  "TPN_noms": [],
+  "date": "2026-07-31",
+  "extracted_at": "2026-07-31T06:59:12.820348",
+  "TPJ": 1,
+  "TPJ_noms": [
+    "AGNUS Vin"
+  ],
+  "TPN": 1,
+  "TPN_noms": [
+    "AGNUS Vin"
+  ],
   "OLJ": 1,
   "OLJ_noms": [
-    "LE MAREC Jul"
+    "GICQUEL Ben"
   ],
-  "OLN": 1,
-  "OLN_noms": [
-    "GRANDIN Yan"
-  ]
+  "OLN": 0,
+  "OLN_noms": []
 }
