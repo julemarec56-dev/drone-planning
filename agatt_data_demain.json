@@ -1,14 +1,10 @@
 {
-  "date": "2026-08-07",
-  "extracted_at": "2026-08-06T06:01:29.921657",
-  "TPJ": 1,
-  "TPJ_noms": [
-    "AGNUS Vin"
-  ],
-  "TPN": 1,
-  "TPN_noms": [
-    "AGNUS Vin"
-  ],
+  "date": "2026-08-08",
+  "extracted_at": "2026-08-07T06:01:32.998326",
+  "TPJ": 0,
+  "TPJ_noms": [],
+  "TPN": 0,
+  "TPN_noms": [],
   "OLJ": 1,
   "OLJ_noms": [
     "GOUADEC Pat"
