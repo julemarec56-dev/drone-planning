@@ -1,10 +1,15 @@
 {
   "date": "2026-08-09",
-  "extracted_at": "2026-08-09T06:00:03.145832",
-  "TPJ": 0,
-  "TPJ_noms": [],
-  "TPN": 0,
-  "TPN_noms": [],
+  "extracted_at": "2026-08-09T14:15:39.032931",
+  "TPJ": 1,
+  "TPJ_noms": [
+    "DUCHENE Ala"
+  ],
+  "TPN": 2,
+  "TPN_noms": [
+    "LE MAREC Jul",
+    "AGNUS Vin"
+  ],
   "OLJ": 1,
   "OLJ_noms": [
     "GOUADEC Pat"
