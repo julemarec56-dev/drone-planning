@@ -1,21 +1,20 @@
 {
-  "date": "2026-08-09",
-  "extracted_at": "2026-08-09T14:21:35.472256",
+  "date": "2026-08-10",
+  "extracted_at": "2026-08-10T06:00:02.953266",
   "TPJ": 1,
   "TPJ_noms": [
-    "DUCHENE Ala"
+    "DARCEL Séb"
   ],
-  "TPN": 2,
+  "TPN": 1,
   "TPN_noms": [
-    "LE MAREC Jul",
-    "AGNUS Vin"
+    "DARCEL Séb"
   ],
   "OLJ": 1,
   "OLJ_noms": [
-    "GOUADEC Pat"
+    "GICQUEL Ben"
   ],
   "OLN": 1,
   "OLN_noms": [
-    "GOUADEC Pat"
+    "GRANDIN Yan"
   ]
 }
