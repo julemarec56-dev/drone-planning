@@ -1,6 +1,5 @@
 {
   "date": "2026-08-11",
-  "extracted_at": "2026-08-10T08:50:26.109364",
   "TPJ": 1,
   "TPJ_noms": [
     "AGNUS Vin"
@@ -10,9 +9,7 @@
     "SELO Ton"
   ],
   "OLJ": 1,
-  "OLJ_noms": [
-    "LE MAREC Jul"
-  ],
+  "OLJ_noms": [],
   "OLN": 1,
   "OLN_noms": [
     "GRANDIN Yan"
