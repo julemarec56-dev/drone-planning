@@ -1,15 +1,16 @@
 {
-  "date": "2026-08-11",
-  "TPJ": 1,
-  "TPJ_noms": [
-    "AGNUS Vin"
-  ],
+  "date": "2026-08-12",
+  "extracted_at": "2026-08-11T06:02:30.947713",
+  "TPJ": 0,
+  "TPJ_noms": [],
   "TPN": 1,
   "TPN_noms": [
     "SELO Ton"
   ],
   "OLJ": 1,
-  "OLJ_noms": [],
+  "OLJ_noms": [
+    "DAGUENET Jul"
+  ],
   "OLN": 1,
   "OLN_noms": [
     "GRANDIN Yan"
