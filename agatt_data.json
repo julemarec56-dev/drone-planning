@@ -1,17 +1,15 @@
 {
-  "date": "2026-08-14",
-  "extracted_at": "2026-08-14T06:00:26.863612",
+  "date": "2026-08-15",
+  "extracted_at": "2026-08-15T06:00:02.595561",
   "TPJ": 1,
   "TPJ_noms": [
-    "DUCHENE Ala"
-  ],
-  "TPN": 1,
-  "TPN_noms": [
     "AGNUS Vin"
   ],
+  "TPN": 0,
+  "TPN_noms": [],
   "OLJ": 1,
   "OLJ_noms": [
-    "GICQUEL Ben"
+    "LE MAREC Jul"
   ],
   "OLN": 0,
   "OLN_noms": []
