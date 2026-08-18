@@ -1,16 +1,11 @@
 {
   "date": "2026-08-19",
-  "extracted_at": "2026-08-18T06:02:35.223268",
   "TPJ": 1,
   "TPJ_noms": [
-    "DARCEL Séb",
-    "AGNUS Vin"
+    "DARCEL Séb"
   ],
-  "TPN": 1,
-  "TPN_noms": [
-    "DARCEL Séb",
-    "AGNUS Vin"
-  ],
+  "TPN": 0,
+  "TPN_noms": [],
   "OLJ": 1,
   "OLJ_noms": [
     "LE MIGNANT Pie"
