@@ -1,16 +1,21 @@
 {
-  "date": "2026-08-23",
-  "extracted_at": "2026-08-22T15:00:02.486437",
-  "TPJ": 0,
-  "TPJ_noms": [],
-  "TPN": 0,
-  "TPN_noms": [],
+  "date": "2026-08-24",
+  "extracted_at": "2026-08-23T06:01:07.888116",
+  "TPJ": 1,
+  "TPJ_noms": [
+    "AGNUS Vin"
+  ],
+  "TPN": 1,
+  "TPN_noms": [
+    "HESLOUIS Séb",
+    "GRIHAULT Ste"
+  ],
   "OLJ": 1,
   "OLJ_noms": [
-    "GOUADEC Pat"
+    "DAGUENET Jul"
   ],
   "OLN": 1,
   "OLN_noms": [
-    "GOUADEC Pat"
+    "PELARD Arn"
   ]
 }
