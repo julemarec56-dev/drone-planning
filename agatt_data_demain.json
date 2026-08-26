@@ -1,18 +1,16 @@
 {
-  "date": "2026-08-26",
-  "extracted_at": "2026-08-25T15:01:46.158559",
+  "date": "2026-08-27",
+  "extracted_at": "2026-08-26T06:02:09.456613",
   "TPJ": 0,
   "TPJ_noms": [],
-  "TPN": 1,
-  "TPN_noms": [
-    "HESLOUIS Séb"
-  ],
+  "TPN": 0,
+  "TPN_noms": [],
   "OLJ": 1,
   "OLJ_noms": [
-    "DAGUENET Jul"
+    "GICQUEL Ben"
   ],
-  "OLN": 2,
+  "OLN": 1,
   "OLN_noms": [
-    "GRANDIN Yan"
+    "PELARD Arn"
   ]
 }
