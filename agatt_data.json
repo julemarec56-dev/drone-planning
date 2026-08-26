@@ -1,8 +1,10 @@
 {
   "date": "2026-08-26",
-  "extracted_at": "2026-08-26T08:54:55.733275",
-  "TPJ": 0,
-  "TPJ_noms": [],
+  "extracted_at": "2026-08-26T09:12:04.156497",
+  "TPJ": 1,
+  "TPJ_noms": [
+    "LE MAREC Jul"
+  ],
   "TPN": 1,
   "TPN_noms": [
     "HESLOUIS Séb"
