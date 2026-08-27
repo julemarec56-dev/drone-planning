@@ -1,12 +1,16 @@
 {
-  "date": "2026-08-26",
-  "extracted_at": "2026-08-26T17:11:17.933880",
+  "date": "2026-08-27",
+  "extracted_at": "2026-08-27T14:09:29.104146",
   "TPJ": 0,
   "TPJ_noms": [],
   "TPN": 0,
   "TPN_noms": [],
-  "OLJ": 0,
-  "OLJ_noms": [],
-  "OLN": 0,
-  "OLN_noms": []
+  "OLJ": 1,
+  "OLJ_noms": [
+    "GICQUEL Ben"
+  ],
+  "OLN": 1,
+  "OLN_noms": [
+    "PELARD Arn"
+  ]
 }
