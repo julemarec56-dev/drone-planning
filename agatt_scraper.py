@@ -67,7 +67,13 @@ def _get_planning_once(today, planning_url):
     }
 
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True, channel="chrome")
+        # channel="chrome" utilise le vrai Chrome installé en local ; sur un environnement
+        # qui n'a que le Chromium embarqué de Playwright (ex. runner GitHub Actions non
+        # configuré pour Chrome), on se replie automatiquement dessus plutôt que de planter.
+        try:
+            browser = p.chromium.launch(headless=True, channel="chrome")
+        except Exception:
+            browser = p.chromium.launch(headless=True)
         page = browser.new_page()
 
         # Connexion
