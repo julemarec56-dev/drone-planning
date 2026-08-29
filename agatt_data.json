@@ -1,16 +1,20 @@
 {
-  "date": "2026-08-27",
-  "extracted_at": "2026-08-27T15:00:03.110030",
-  "TPJ": 0,
-  "TPJ_noms": [],
-  "TPN": 0,
-  "TPN_noms": [],
+  "date": "2026-08-29",
+  "extracted_at": "2026-08-29T08:56:07.958327",
+  "TPJ": 1,
+  "TPJ_noms": [
+    "AGNUS Vin"
+  ],
+  "TPN": 1,
+  "TPN_noms": [
+    "AGNUS Vin"
+  ],
   "OLJ": 1,
   "OLJ_noms": [
-    "GICQUEL Ben"
+    "LE MIGNANT Pie"
   ],
   "OLN": 1,
   "OLN_noms": [
-    "PELARD Arn"
+    "GOUADEC Pat"
   ]
 }
