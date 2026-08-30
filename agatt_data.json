@@ -1,10 +1,14 @@
 {
   "date": "2026-08-30",
-  "extracted_at": "2026-08-30T06:00:02.541879",
-  "TPJ": 0,
-  "TPJ_noms": [],
-  "TPN": 0,
-  "TPN_noms": [],
+  "extracted_at": "2026-08-30T15:00:03.362623",
+  "TPJ": 1,
+  "TPJ_noms": [
+    "LE MAREC Jul"
+  ],
+  "TPN": 1,
+  "TPN_noms": [
+    "LE MAREC Jul"
+  ],
   "OLJ": 1,
   "OLJ_noms": [
     "GOUADEC Pat"
