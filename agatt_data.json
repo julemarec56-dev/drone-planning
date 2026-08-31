@@ -1,13 +1,11 @@
 {
-  "date": "2026-08-30",
-  "extracted_at": "2026-08-30T15:00:03.362623",
-  "TPJ": 1,
-  "TPJ_noms": [
-    "LE MAREC Jul"
-  ],
+  "date": "2026-08-31",
+  "extracted_at": "2026-08-31T06:00:03.184812",
+  "TPJ": 0,
+  "TPJ_noms": [],
   "TPN": 1,
   "TPN_noms": [
-    "LE MAREC Jul"
+    "HESLOUIS Séb"
   ],
   "OLJ": 1,
   "OLJ_noms": [
@@ -15,6 +13,6 @@
   ],
   "OLN": 1,
   "OLN_noms": [
-    "GOUADEC Pat"
+    "GICQUEL Ben"
   ]
 }
