@@ -1,18 +1,12 @@
 {
-  "date": "2026-08-31",
-  "extracted_at": "2026-08-30T15:02:37.124922",
+  "date": "2026-09-01",
+  "extracted_at": "2026-08-31T06:02:05.198629",
   "TPJ": 0,
   "TPJ_noms": [],
-  "TPN": 1,
-  "TPN_noms": [
-    "HESLOUIS Séb"
-  ],
-  "OLJ": 1,
-  "OLJ_noms": [
-    "GOUADEC Pat"
-  ],
-  "OLN": 1,
-  "OLN_noms": [
-    "GICQUEL Ben"
-  ]
+  "TPN": 0,
+  "TPN_noms": [],
+  "OLJ": 0,
+  "OLJ_noms": [],
+  "OLN": 0,
+  "OLN_noms": []
 }
