@@ -1,8 +1,10 @@
 {
   "date": "2026-08-31",
-  "extracted_at": "2026-08-31T06:00:03.184812",
-  "TPJ": 0,
-  "TPJ_noms": [],
+  "extracted_at": "2026-08-31T15:00:03.390316",
+  "TPJ": 1,
+  "TPJ_noms": [
+    "DARCEL Séb"
+  ],
   "TPN": 1,
   "TPN_noms": [
     "HESLOUIS Séb"
