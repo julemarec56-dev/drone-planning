@@ -1,12 +1,16 @@
 {
   "date": "2026-09-01",
-  "extracted_at": "2026-08-31T06:02:05.198629",
+  "extracted_at": "2026-08-31T15:02:36.199810",
   "TPJ": 0,
   "TPJ_noms": [],
   "TPN": 0,
   "TPN_noms": [],
-  "OLJ": 0,
-  "OLJ_noms": [],
-  "OLN": 0,
-  "OLN_noms": []
+  "OLJ": 1,
+  "OLJ_noms": [
+    "DAGUENET Jul"
+  ],
+  "OLN": 1,
+  "OLN_noms": [
+    "DAGUENET Jul"
+  ]
 }
