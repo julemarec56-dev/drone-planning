@@ -1,20 +1,16 @@
 {
-  "date": "2026-08-31",
-  "extracted_at": "2026-08-31T15:00:03.390316",
-  "TPJ": 1,
-  "TPJ_noms": [
-    "DARCEL Séb"
-  ],
-  "TPN": 1,
-  "TPN_noms": [
-    "HESLOUIS Séb"
-  ],
+  "date": "2026-09-01",
+  "extracted_at": "2026-09-01T06:00:03.234870",
+  "TPJ": 0,
+  "TPJ_noms": [],
+  "TPN": 0,
+  "TPN_noms": [],
   "OLJ": 1,
   "OLJ_noms": [
-    "GOUADEC Pat"
+    "DAGUENET Jul"
   ],
   "OLN": 1,
   "OLN_noms": [
-    "GICQUEL Ben"
+    "DAGUENET Jul"
   ]
 }
