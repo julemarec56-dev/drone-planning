@@ -1,12 +1,16 @@
 {
   "date": "2026-09-06",
-  "extracted_at": "2026-09-05T06:02:39.560198",
+  "extracted_at": "2026-09-05T15:03:36.687818",
   "TPJ": 0,
   "TPJ_noms": [],
   "TPN": 0,
   "TPN_noms": [],
-  "OLJ": 0,
-  "OLJ_noms": [],
-  "OLN": 0,
-  "OLN_noms": []
+  "OLJ": 1,
+  "OLJ_noms": [
+    "GOUADEC Pat"
+  ],
+  "OLN": 1,
+  "OLN_noms": [
+    "GOUADEC Pat"
+  ]
 }
