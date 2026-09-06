@@ -1,14 +1,10 @@
 {
-  "date": "2026-09-05",
-  "extracted_at": "2026-09-05T15:01:00.407726",
-  "TPJ": 1,
-  "TPJ_noms": [
-    "LE MAREC Jul"
-  ],
-  "TPN": 1,
-  "TPN_noms": [
-    "AGNUS Vin"
-  ],
+  "date": "2026-09-06",
+  "extracted_at": "2026-09-06T06:00:02.895713",
+  "TPJ": 0,
+  "TPJ_noms": [],
+  "TPN": 0,
+  "TPN_noms": [],
   "OLJ": 1,
   "OLJ_noms": [
     "GOUADEC Pat"
