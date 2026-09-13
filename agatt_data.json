@@ -1,10 +1,12 @@
 {
-  "date": "2026-09-12",
-  "extracted_at": "2026-09-12T15:00:02.253112",
+  "date": "2026-09-13",
+  "extracted_at": "2026-09-13T15:00:02.853612",
   "TPJ": 0,
   "TPJ_noms": [],
-  "TPN": 0,
-  "TPN_noms": [],
+  "TPN": 1,
+  "TPN_noms": [
+    "SELO Ton"
+  ],
   "OLJ": 1,
   "OLJ_noms": [
     "GOUADEC Pat"
