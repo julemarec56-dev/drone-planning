@@ -1,18 +1,16 @@
 {
-  "date": "2026-09-15",
-  "extracted_at": "2026-09-15T15:00:02.332328",
+  "date": "2026-09-16",
+  "extracted_at": "2026-09-16T15:00:03.139434",
   "TPJ": 1,
   "TPJ_noms": [
-    "GRIHAULT Ste"
+    "AGNUS Vin"
   ],
   "TPN": 1,
   "TPN_noms": [
-    "GRIHAULT Ste"
+    "AGNUS Vin"
   ],
-  "OLJ": 1,
-  "OLJ_noms": [
-    "DAGUENET Jul"
-  ],
+  "OLJ": 0,
+  "OLJ_noms": [],
   "OLN": 1,
   "OLN_noms": [
     "PELARD Arn"
