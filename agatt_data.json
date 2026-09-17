@@ -1,18 +1,20 @@
 {
-  "date": "2026-09-16",
-  "extracted_at": "2026-09-16T15:00:03.139434",
+  "date": "2026-09-17",
+  "extracted_at": "2026-09-17T15:00:03.190486",
   "TPJ": 1,
   "TPJ_noms": [
-    "AGNUS Vin"
+    "SELO Ton"
   ],
   "TPN": 1,
   "TPN_noms": [
-    "AGNUS Vin"
+    "SELO Ton"
   ],
-  "OLJ": 0,
-  "OLJ_noms": [],
+  "OLJ": 1,
+  "OLJ_noms": [
+    "GOUADEC Pat"
+  ],
   "OLN": 1,
   "OLN_noms": [
-    "PELARD Arn"
+    "GOUADEC Pat"
   ]
 }
