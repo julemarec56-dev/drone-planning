@@ -1,18 +1,12 @@
 {
-  "date": "2026-09-18",
-  "extracted_at": "2026-09-18T15:00:03.233005",
-  "TPJ": 1,
-  "TPJ_noms": [
-    "AGNUS Vin"
-  ],
-  "TPN": 1,
-  "TPN_noms": [
-    "HESLOUIS Séb"
-  ],
-  "OLJ": 1,
-  "OLJ_noms": [
-    "GOUADEC Pat"
-  ],
+  "date": "2026-09-19",
+  "extracted_at": "2026-09-19T15:00:10.075227",
+  "TPJ": 0,
+  "TPJ_noms": [],
+  "TPN": 0,
+  "TPN_noms": [],
+  "OLJ": 0,
+  "OLJ_noms": [],
   "OLN": 0,
   "OLN_noms": []
 }
