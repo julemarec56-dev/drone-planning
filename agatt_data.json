@@ -1,20 +1,18 @@
 {
-  "date": "2026-09-28",
-  "extracted_at": "2026-09-28T15:00:08.541978",
+  "date": "2026-09-29",
+  "extracted_at": "2026-09-29T15:00:29.579478",
   "TPJ": 1,
   "TPJ_noms": [
-    "DARCEL Séb"
+    "AGNUS Vin"
   ],
   "TPN": 1,
   "TPN_noms": [
     "SELO Ton"
   ],
-  "OLJ": 1,
-  "OLJ_noms": [
-    "LE MIGNANT Pie"
-  ],
+  "OLJ": 0,
+  "OLJ_noms": [],
   "OLN": 1,
   "OLN_noms": [
-    "PELARD Arn"
+    "GICQUEL Ben"
   ]
 }
