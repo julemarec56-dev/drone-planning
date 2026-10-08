@@ -1,7 +1,7 @@
 {
-  "date": "2026-10-06",
-  "extracted_at": "2026-10-06T15:51:35.462694",
-  "TPJ": 1,
+  "date": "2026-10-08",
+  "extracted_at": "2026-10-08T15:00:04.435421",
+  "TPJ": 0,
   "TPJ_noms": [],
   "TPN": 1,
   "TPN_noms": [
@@ -9,10 +9,10 @@
   ],
   "OLJ": 1,
   "OLJ_noms": [
-    "GICQUEL Ben"
+    "LE MIGNANT Pie"
   ],
   "OLN": 1,
   "OLN_noms": [
-    "GICQUEL Ben"
+    "LE MIGNANT Pie"
   ]
 }
