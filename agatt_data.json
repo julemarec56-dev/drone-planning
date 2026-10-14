@@ -1,18 +1,18 @@
 {
-  "date": "2026-10-13",
-  "extracted_at": "2026-10-13T17:20:23.930089",
-  "TPJ": 1,
-  "TPJ_noms": [
-    "AGNUS Vin"
-  ],
+  "date": "2026-10-14",
+  "extracted_at": "2026-10-14T15:00:02.686117",
+  "TPJ": 0,
+  "TPJ_noms": [],
   "TPN": 1,
   "TPN_noms": [
-    "HESLOUIS Séb"
+    "FAVE Ber"
   ],
-  "OLJ": 0,
-  "OLJ_noms": [],
+  "OLJ": 1,
+  "OLJ_noms": [
+    "GICQUEL Ben"
+  ],
   "OLN": 1,
   "OLN_noms": [
-    "GICQUEL Ben"
+    "GOUADEC Pat"
   ]
 }
