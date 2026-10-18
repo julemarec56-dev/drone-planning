@@ -1,18 +1,16 @@
 {
-  "date": "2026-10-17",
-  "extracted_at": "2026-10-17T15:00:02.836934",
+  "date": "2026-10-18",
+  "extracted_at": "2026-10-18T15:00:11.272225",
   "TPJ": 1,
   "TPJ_noms": [
-    "AGNUS Vin"
+    "DUCHENE Ala"
   ],
   "TPN": 1,
   "TPN_noms": [
-    "AGNUS Vin"
+    "HESLOUIS Séb"
   ],
-  "OLJ": 1,
-  "OLJ_noms": [
-    "GICQUEL Ben"
-  ],
+  "OLJ": 0,
+  "OLJ_noms": [],
   "OLN": 1,
   "OLN_noms": [
     "LE MIGNANT Pie"
