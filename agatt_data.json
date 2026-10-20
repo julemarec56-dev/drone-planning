@@ -1,16 +1,16 @@
 {
-  "date": "2026-10-19",
-  "extracted_at": "2026-10-19T15:00:02.522250",
-  "TPJ": 1,
-  "TPJ_noms": [
-    "AGNUS Vin"
-  ],
+  "date": "2026-10-20",
+  "extracted_at": "2026-10-20T15:00:02.577676",
+  "TPJ": 0,
+  "TPJ_noms": [],
   "TPN": 1,
   "TPN_noms": [
     "SELO Ton"
   ],
-  "OLJ": 0,
-  "OLJ_noms": [],
+  "OLJ": 1,
+  "OLJ_noms": [
+    "GICQUEL Ben"
+  ],
   "OLN": 1,
   "OLN_noms": [
     "GRANDIN Yan"
