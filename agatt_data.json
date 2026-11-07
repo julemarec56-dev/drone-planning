@@ -1,14 +1,10 @@
 {
-  "date": "2026-11-06",
-  "extracted_at": "2026-11-06T14:00:37.947841",
-  "TPJ": 1,
-  "TPJ_noms": [
-    "GRIHAULT Ste"
-  ],
-  "TPN": 1,
-  "TPN_noms": [
-    "GRIHAULT Ste"
-  ],
+  "date": "2026-11-07",
+  "extracted_at": "2026-11-07T14:01:01.206140",
+  "TPJ": 0,
+  "TPJ_noms": [],
+  "TPN": 0,
+  "TPN_noms": [],
   "OLJ": 1,
   "OLJ_noms": [
     "GOUADEC Pat"
