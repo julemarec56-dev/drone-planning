@@ -1,20 +1,14 @@
 {
-  "date": "2026-11-10",
-  "extracted_at": "2026-11-10T14:00:46.742283",
-  "TPJ": 1,
-  "TPJ_noms": [
-    "GRIHAULT Ste"
-  ],
+  "date": "2026-11-11",
+  "extracted_at": "2026-11-11T14:01:32.528046",
+  "TPJ": 0,
+  "TPJ_noms": [],
   "TPN": 1,
   "TPN_noms": [
-    "LE PALLEC Ale"
+    "SELO Ton"
   ],
-  "OLJ": 1,
-  "OLJ_noms": [
-    "GUERIN Séb"
-  ],
-  "OLN": 1,
-  "OLN_noms": [
-    "GRANDIN Yan"
-  ]
+  "OLJ": 0,
+  "OLJ_noms": [],
+  "OLN": 0,
+  "OLN_noms": []
 }
