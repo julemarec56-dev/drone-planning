@@ -1,18 +1,16 @@
 {
-  "date": "2026-11-16",
-  "extracted_at": "2026-11-16T17:30:38.820086",
+  "date": "2026-11-17",
+  "extracted_at": "2026-11-17T14:00:12.052117",
   "TPJ": 0,
   "TPJ_noms": [],
   "TPN": 1,
   "TPN_noms": [
-    "HESLOUIS Séb"
+    "SELO Ton"
   ],
-  "OLJ": 1,
-  "OLJ_noms": [
-    "LE MIGNANT Pie"
-  ],
+  "OLJ": 0,
+  "OLJ_noms": [],
   "OLN": 1,
   "OLN_noms": [
-    "GRANDIN Yan"
+    "LE MIGNANT Pie"
   ]
 }
