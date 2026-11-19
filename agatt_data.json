@@ -1,20 +1,18 @@
 {
-  "date": "2026-11-18",
-  "extracted_at": "2026-11-18T14:00:02.707581",
-  "TPJ": 1,
-  "TPJ_noms": [
-    "GRIHAULT Ste"
-  ],
+  "date": "2026-11-19",
+  "extracted_at": "2026-11-19T14:00:02.668478",
+  "TPJ": 0,
+  "TPJ_noms": [],
   "TPN": 1,
   "TPN_noms": [
-    "GRIHAULT Ste"
+    "SELO Ton"
   ],
   "OLJ": 1,
   "OLJ_noms": [
-    "GICQUEL Ben"
+    "LE MIGNANT Pie"
   ],
   "OLN": 1,
   "OLN_noms": [
-    "GRANDIN Yan"
+    "LE MIGNANT Pie"
   ]
 }
